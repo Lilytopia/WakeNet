@@ -16,7 +16,7 @@ To solve the problem, in this repo, we address the automatic ship wake detection
 | [BBAVectors](https://github.com/yijingru/BBAVectors-Oriented-Object-Detection) | CenterNet | ResNet-101 | 66.19% |
 | [*WakeNet (Ours)*](https://github.com/Lilytopia/WakeNet) | RetinaNet | FcaNet-101 | **77.04%** |
 
-![Results](https://github.com/Lilytopia/WakeNet/blob/main/mdimg/introduction.png)
+![Results](https://github.com/Lilytopia/WakeNet/blob/main/mdimg/results.png)
 
 ## Dependencies
 Python 3.6.12, Pytorch 1.7.0, OpenCV-Python 3.4.2, CUDA 11.0
