@@ -5,7 +5,7 @@ A CNN-based optical image ship wake detector. It uses SWIM as the benchmark data
 Most existing wake detection algorithms use **Radon transform (RT)** due to the long streak features of ship wakes in SAR images. The high false alarm rate of RT requires that the algorithms have significant human intervention for image preprocessing. When processing optical images these algorithms are greatly challenged because it is not only sea clutter that interferes with the wake detection in the optical waveband, but many other environmental factors.
 To solve the problem, in this repo, we address the automatic ship wake detection task in optical images from the idea of the **CNN** to design an end-to end detector as a novel method. The detector processes all the wake textures clamped by the V-shaped Kelvin arms as the object, and conducts detection via the OBB. The extra regression of wake tip coordinates and Kelvin arm direction can improve the hard wake detection performance while predicting the wake heading. Some special structures and strategies are also adopted according to the wake features.
 
-![Introduction](http://github.com/Lilytopia/WakeNet/tree/mdimg/introduction.png)
+![Introduction](https://github.com/Lilytopia/WakeNet/blob/main/mdimg/introduction.png)
 
 ## Detection Results on SWIM dataset 
 | Method | Baseline | Backbone | mAP (AP) |
@@ -16,7 +16,7 @@ To solve the problem, in this repo, we address the automatic ship wake detection
 | [BBAVectors](https://github.com/yijingru/BBAVectors-Oriented-Object-Detection) | CenterNet | ResNet-101 | 66.19% |
 | [*WakeNet (Ours)*](https://github.com/Lilytopia/WakeNet) | RetinaNet | FcaNet-101 | **77.04%** |
 
-![Results](http://github.com/Lilytopia/WakeNet/tree/mdimg/results.png)
+![Results](https://github.com/Lilytopia/WakeNet/blob/main/mdimg/introduction.png)
 
 ## Dependencies
 Python 3.6.12, Pytorch 1.7.0, OpenCV-Python 3.4.2, CUDA 11.0
