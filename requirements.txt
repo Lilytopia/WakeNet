@@ -1,0 +1,11 @@
+numpy
+torchvision
+Cython
+imgaug
+tqdm
+setuptools
+matplotlib
+shapely
+Pillow
+six
+torch-warmup-lr==1.0.0
