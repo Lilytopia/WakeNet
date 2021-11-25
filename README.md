@@ -1,6 +1,20 @@
 # WakeNet
 A CNN-based optical image ship wake detector. It uses SWIM as the benchmark dataset.
 
+If you find this code helpful in your research, please cite this paper:
+```
+@ARTICLE{9618934,
+author={Xue, Fuduo and Jin, Weiqi and Qiu, Su and Yang, Jie},
+journal={IEEE Transactions on Geoscience and Remote Sensing},
+title={Rethinking Automatic Ship Wake Detection: State-of-the-Art CNN-based Wake Detection via Optical Images},
+year={2021},
+volume={},
+number={},
+pages={1-1},
+doi={10.1109/TGRS.2021.3128989}}
+```
+
+
 ## Introduction
 Most existing wake detection algorithms use **Radon transform (RT)** due to the long streak features of ship wakes in SAR images. The high false alarm rate of RT requires that the algorithms have significant human intervention for image preprocessing. When processing optical images these algorithms are greatly challenged because it is not only sea clutter that interferes with the wake detection in the optical waveband, but many other environmental factors.
 To solve the problem, in this repo, we address the automatic ship wake detection task in optical images from the idea of the **CNN** to design an end-to end detector as a novel method. The detector processes all the wake textures clamped by the V-shaped Kelvin arms as the object, and conducts detection via the OBB. The extra regression of wake tip coordinates and Kelvin arm direction can improve the hard wake detection performance while predicting the wake heading. Some special structures and strategies are also adopted according to the wake features.
